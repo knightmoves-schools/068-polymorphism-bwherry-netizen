@@ -32,11 +32,12 @@ function listen(animals) {
     sounds.push(new bird('say'));
     
     
-    animals.forEach(animal => {
-        say += `${sounds.draw()}`
+    animals.forEach(animal) => {
+        say += `${animals.draw()}`
     });
 
     return sounds;
 }
+
 
 
