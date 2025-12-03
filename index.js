@@ -5,13 +5,13 @@ class Cat {
 }
 
 class Dog {
-    talk() {
+    say() {
         return 'woof';
     }
 }
 
 class Bird {
-    sing() {
+    say() {
         return 'chirp';
     }
 }
@@ -23,17 +23,19 @@ let animals = [
 ]
 
 function listen(animals) {
+    let say = ''
     let sounds = [];
-
+    
+    
+    animals.push(new cat('say'));
+    animals.push(new dog('say'));
+    animals.push(new bird('say'));
+    
+    
     animals.forEach(animal => {
-        if (animal instanceof Cat) {
-            sounds.push(animal.say());
-        } else if (animal instanceof Dog) {
-            sounds.push(animal.talk());
-        } else if (animal instanceof Bird) {
-            sounds.push(animal.sing());
-        }
+    say += `${animals.draw()}`
     });
 
     return sounds;
 }
+
