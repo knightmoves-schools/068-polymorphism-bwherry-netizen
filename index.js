@@ -36,8 +36,9 @@ function listen(animals) {
         say += `${sounds.draw()}`
     });
 
-    return sounds;
+    return say;
 }
+
 
 
 
