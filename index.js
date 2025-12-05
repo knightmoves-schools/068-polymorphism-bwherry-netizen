@@ -26,11 +26,12 @@ function listen(animals) {
     let sounds = [];
     
     animals.forEach(animal => {
-        sounds += `${animal.say()}<br>`
+        sounds.push(animal.say())
     });
 
     return sounds;
 }
+
 
 
 
