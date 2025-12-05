@@ -23,21 +23,15 @@ let animals = [
 ]
 
 function listen(animals) {
-    let say = '';
     let sounds = [];
     
-    
-    sounds.push(new Cat('say'));
-    sounds.push(new Dog('say'));
-    sounds.push(new Bird('say'));
-    
-    
-    sounds.forEach((sound) => {
-        say += `${sounds.draw()}<br>`
+    animals.forEach(animal => {
+        sounds += `${animal.say()}<br>`
     });
 
-    return say;
+    return sounds;
 }
+
 
 
 
